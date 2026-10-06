@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+    <xs:element name="Gun" type="GunType"/>
+
+    <xs:complexType name="GunType">
+        <xs:sequence>
+            <xs:element name="Firearm" type="FirearmType" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="FirearmType">
+        <xs:sequence>
+            <xs:element name="Model" type="ModelType"/>
+            <xs:element name="Handy" type="HandyType"/>
+            <xs:element name="Origin" type="OriginType"/>
+            <xs:element name="TTC" type="TtcType"/>
+            <xs:element name="Material" type="MaterialType"/>
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:ID" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="TtcType">
+        <xs:sequence>
+            <xs:element name="FiringRange" type="FiringRangeType"/>
+            <xs:element name="SightingRange" type="SightingRangeType"/>
+            <xs:element name="Clip" type="xs:boolean"/>
+            <xs:element name="Optics" type="xs:boolean"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:simpleType name="ModelType">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="1"/>
+            <xs:maxLength value="50"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="HandyType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="one-handed"/>
+            <xs:enumeration value="two-handed"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!-- used as an element name by the XSL transformation, so it must be a valid XML name -->
+    <xs:simpleType name="OriginType">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[A-Z][A-Za-z]+"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!-- close: 0-500 m, medium: 500-1000 m, far: 1000+ m -->
+    <xs:simpleType name="FiringRangeType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="close"/>
+            <xs:enumeration value="medium"/>
+            <xs:enumeration value="far"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="SightingRangeType">
+        <xs:restriction base="xs:positiveInteger">
+            <xs:minInclusive value="10"/>
+            <xs:maxInclusive value="3000"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="MaterialType">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="2"/>
+            <xs:maxLength value="40"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+</xs:schema>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Gun xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="gun.xsd">
+    <Firearm id="f1">
+        <Model>Glock 17</Model>
+        <Handy>one-handed</Handy>
+        <Origin>Austria</Origin>
+        <TTC>
+            <FiringRange>close</FiringRange>
+            <SightingRange>50</SightingRange>
+            <Clip>true</Clip>
+            <Optics>false</Optics>
+        </TTC>
+        <Material>polymer</Material>
+    </Firearm>
+    <Firearm id="f2">
+        <Model>M4A1</Model>
+        <Handy>two-handed</Handy>
+        <Origin>USA</Origin>
+        <TTC>
+            <FiringRange>medium</FiringRange>
+            <SightingRange>600</SightingRange>
+            <Clip>true</Clip>
+            <Optics>true</Optics>
+        </TTC>
+        <Material>aluminum alloy</Material>
+    </Firearm>
+    <Firearm id="f3">
+        <Model>Fort-17</Model>
+        <Handy>one-handed</Handy>
+        <Origin>Ukraine</Origin>
+        <TTC>
+            <FiringRange>close</FiringRange>
+            <SightingRange>50</SightingRange>
+            <Clip>true</Clip>
+            <Optics>false</Optics>
+        </TTC>
+        <Material>steel</Material>
+    </Firearm>
+    <Firearm id="f4">
+        <Model>HK G36</Model>
+        <Handy>two-handed</Handy>
+        <Origin>Germany</Origin>
+        <TTC>
+            <FiringRange>medium</FiringRange>
+            <SightingRange>800</SightingRange>
+            <Clip>true</Clip>
+            <Optics>true</Optics>
+        </TTC>
+        <Material>polymer</Material>
+    </Firearm>
+    <Firearm id="f5">
+        <Model>Barrett M82</Model>
+        <Handy>two-handed</Handy>
+        <Origin>USA</Origin>
+        <TTC>
+            <FiringRange>far</FiringRange>
+            <SightingRange>1800</SightingRange>
+            <Clip>true</Clip>
+            <Optics>true</Optics>
+        </TTC>
+        <Material>steel</Material>
+    </Firearm>
+    <Firearm id="f6">
+        <Model>Steyr AUG</Model>
+        <Handy>two-handed</Handy>
+        <Origin>Austria</Origin>
+        <TTC>
+            <FiringRange>medium</FiringRange>
+            <SightingRange>500</SightingRange>
+            <Clip>true</Clip>
+            <Optics>true</Optics>
+        </TTC>
+        <Material>polymer</Material>
+    </Firearm>
+    <Firearm id="f7">
+        <Model>Zbroyar Z-10</Model>
+        <Handy>two-handed</Handy>
+        <Origin>Ukraine</Origin>
+        <TTC>
+            <FiringRange>far</FiringRange>
+            <SightingRange>1200</SightingRange>
+            <Clip>true</Clip>
+            <Optics>true</Optics>
+        </TTC>
+        <Material>aluminum alloy</Material>
+    </Firearm>
+    <Firearm id="f8">
+        <Model>HK USP</Model>
+        <Handy>one-handed</Handy>
+        <Origin>Germany</Origin>
+        <TTC>
+            <FiringRange>close</FiringRange>
+            <SightingRange>50</SightingRange>
+            <Clip>true</Clip>
+            <Optics>false</Optics>
+        </TTC>
+        <Material>polymer</Material>
+    </Firearm>
+    <Firearm id="f9">
+        <Model>Colt Single Action Army</Model>
+        <Handy>one-handed</Handy>
+        <Origin>USA</Origin>
+        <TTC>
+            <FiringRange>close</FiringRange>
+            <SightingRange>50</SightingRange>
+            <Clip>false</Clip>
+            <Optics>false</Optics>
+        </TTC>
+        <Material>steel</Material>
+    </Firearm>
+    <Firearm id="f10">
+        <Model>FN SCAR-H</Model>
+        <Handy>two-handed</Handy>
+        <Origin>Belgium</Origin>
+        <TTC>
+            <FiringRange>medium</FiringRange>
+            <SightingRange>800</SightingRange>
+            <Clip>true</Clip>
+            <Optics>true</Optics>
+        </TTC>
+        <Material>aluminum alloy</Material>
+    </Firearm>
+</Gun>
